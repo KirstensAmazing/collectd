@@ -23,7 +23,7 @@ default['collectd']['read_threads'] = 5                                 # node_a
 default['collectd']['is_proxy'] = true                                  # node_attribute
 default['collectd']['remote']['ip'] = '1.2.3.4'                         # node_attribute (inherited from cluster?)
 default['collectd']['timeout'] = 30  # 5 minutes, with default interval # node_attribute (inherited from cluster?)
-
+default['collectd']['collectd_web_tarball'] = "https://github.com/httpdss/collectd-web/tarball/master"
 default['collectd']['collectd_web']['path'] = "/srv/collectd_web"       # node_attribute
 default['collectd']['collectd_web']['hostname'] = "collectd"            # node_attribute
 

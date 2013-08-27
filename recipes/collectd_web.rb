@@ -45,7 +45,7 @@ bash "install_collectd_web" do
     )
   end
   code <<-EOH
-    wget --no-check-certificate -O collectd-web.tar.gz https://github.com/httpdss/collectd-web/tarball/master
+    wget --no-check-certificate -O collectd-web.tar.gz node['collectd']['collectd_web_tarball']
     tar --strip-components=1 -xzf collectd-web.tar.gz
     rm collectd-web.tar.gz
   EOH
